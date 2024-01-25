@@ -1,0 +1,205 @@
+* {
+    /* 初始化 */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* 100%窗口高度 */
+    height: 100vh;
+    /* 弹性布局 水平+垂直居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 渐变背景 */
+    background: url("../res/login2.jpg");
+    background-size: cover;
+    background-color: rgba(20, 140, 200, 1);
+}
+
+.container {
+    background-color: #ffffffa5;
+    width: 650px;
+    height: 415px;
+    border-radius: 5px;
+    /* 阴影 */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    /* 相对定位 */
+    position: relative;
+}
+
+.form-box {
+    /* 绝对定位 */
+    position: absolute;
+    top: -10%;
+    left: 2%;
+    background: linear-gradient(200deg, #5cb4d2, #2169d5);
+    width: 320px;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    /* 动画过渡 加速后减速 */
+    transition: 0.5s ease-in-out;
+}
+
+.getback-box,
+.login-box {
+    /* 弹性布局 垂直排列 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+    transition: 0.5s;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #fff;
+    /* 字间距 */
+    letter-spacing: 5px;
+}
+
+input {
+    background-color: transparent;
+    width: 70%;
+    color: #fff;
+    border: none;
+    /* 下边框样式 */
+    border-bottom: 1px solid rgba(22, 69, 198, 0.4);
+    padding: 10px 0;
+    text-indent: 10px;
+    margin: 8px 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+input:focus {
+    color: #08285f;
+    outline: none;
+    border-bottom: 1px solid #1f28d4bc;
+    transition: 0.5s;
+}
+
+input:focus::placeholder {
+    opacity: 0;
+}
+
+
+.form-box button {
+    width: 60%;
+    margin-top: 25px;
+    background-color: #f6f6f6;
+    outline: none;
+    border-radius: 8px;
+    padding: 10px;
+    color: #3766b7;
+    border: none;
+    cursor: pointer;
+}
+.form-box .login-box button {
+    margin-top: 25px;
+}
+
+.form-box button:hover {
+    background-color: #3766b7;
+    color: #f6f6f6;
+    transition: background-color 0.5s ease;
+}
+
+.con-box {
+    width: 50%;
+    /* 弹性布局 垂直排列 居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 绝对定位 居中 */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.radio {
+    margin-top: 35px;
+    font-size: 12px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #fff;
+
+}
+
+.radio input {
+
+    background-color: transparent;
+    width: 25px;
+    border: none;
+    padding: 10px 0;
+    text-indent: 10px;
+    margin: 8px 0;
+
+}
+
+.con-box.left {
+    left: -2%;
+}
+
+.con-box.right {
+    right: -2%;
+}
+
+.con-box h2 {
+    color: #386ccd;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.con-box p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #386ccd;
+    text-align: center;
+}
+
+.con-box span {
+    color: #3c5e9c;
+}
+
+.con-box img {
+    width: 150px;
+    height: 150px;
+    opacity: 0.9;
+    margin: 40px 0;
+}
+
+.con-box button {
+    margin-top: 3%;
+    background-color: #fff;
+    color: #688de6;
+    border: 1px solid #2d55e3;
+    padding: 6px 10px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+}
+
+.con-box button:hover {
+    background-color: #3978de;
+    color: #fff;
+}

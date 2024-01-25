@@ -1,0 +1,53 @@
+/* 弹窗 */
+.btn-alert{
+    display: block;
+    width: 400px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
+    font-size: 40px;
+    margin: 20px auto 0;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 5px;
+    box-shadow: 0 0 5px #fff;
+}
+/* 遮罩层 */
+.alert{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.4);
+    position: fixed;
+    top:0;
+    left: 0;
+}
+.alert-body{
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+    animation: moveFromBottom .3s linear;
+}
+@keyframes moveFromTop{
+    0%{
+        margin-top: -600px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+@keyframes moveFromBottom{
+    0%{
+        margin-bottom: -600px;
+    }
+    100%{
+        margin-bottom: 0;
+    }
+}

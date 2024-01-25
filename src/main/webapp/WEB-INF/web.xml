@@ -1,0 +1,531 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>servlet.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginOut</servlet-name>
+        <servlet-class>servlet.LoginOut</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginOut</servlet-name>
+        <url-pattern>/LoginOut</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Retrieve</servlet-name>
+        <servlet-class>servlet.Retrieve</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Retrieve</servlet-name>
+        <url-pattern>/Retrieve</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyCadre</servlet-name>
+        <servlet-class>servlet.ModifyCadre</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyCadre</servlet-name>
+        <url-pattern>/html/class_daily/ModifyCadre</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyDor</servlet-name>
+        <servlet-class>servlet.ModifyDor</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyDor</servlet-name>
+        <url-pattern>/html/class_daily/ModifyDor</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyAttendance</servlet-name>
+        <servlet-class>servlet.ModifyAttendance</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyAttendance</servlet-name>
+        <url-pattern>/html/class_daily/ModifyAttendance</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyActivity</servlet-name>
+        <servlet-class>servlet.ModifyActivity</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyActivity</servlet-name>
+        <url-pattern>/html/class_daily/ModifyActivity</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyStudent</servlet-name>
+        <servlet-class>servlet.ModifyStudent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyStudent</servlet-name>
+        <url-pattern>/html/stu_info/ModifyStudent</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyReward</servlet-name>
+        <servlet-class>servlet.ModifyReward</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyReward</servlet-name>
+        <url-pattern>/html/class_daily/ModifyReward</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyFund</servlet-name>
+        <servlet-class>servlet.ModifyFund</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyFund</servlet-name>
+        <url-pattern>/html/class_daily/ModifyFund</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyPlan</servlet-name>
+        <servlet-class>servlet.ModifyPlan</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyPlan</servlet-name>
+        <url-pattern>/html/work/ModifyPlan</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddAttendance</servlet-name>
+        <servlet-class>servlet.AddAttendance</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddAttendance</servlet-name>
+        <url-pattern>/html/class_daily/AddAttendance</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddActivity</servlet-name>
+        <servlet-class>servlet.AddActivity</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddActivity</servlet-name>
+        <url-pattern>/html/class_daily/AddActivity</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddReward</servlet-name>
+        <servlet-class>servlet.AddReward</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddReward</servlet-name>
+        <url-pattern>/html/class_daily/AddReward</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddFund</servlet-name>
+        <servlet-class>servlet.AddFund</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddFund</servlet-name>
+        <url-pattern>/html/class_daily/AddFund</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddPlan</servlet-name>
+        <servlet-class>servlet.AddPlan</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddPlan</servlet-name>
+        <url-pattern>/html/work/AddPlan</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddSummary</servlet-name>
+        <servlet-class>servlet.AddSummary</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddSummary</servlet-name>
+        <url-pattern>/html/work/AddSummary</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddMeeting</servlet-name>
+        <servlet-class>servlet.AddMeeting</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddMeeting</servlet-name>
+        <url-pattern>/html/work/AddMeeting</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddStudent</servlet-name>
+        <servlet-class>servlet.AddStudent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddStudent</servlet-name>
+        <url-pattern>/html/stumanage/AddStudent</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddTeacher</servlet-name>
+        <servlet-class>servlet.AddTeacher</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddTeacher</servlet-name>
+        <url-pattern>/html/teamanage/AddTeacher</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchCadre</servlet-name>
+        <servlet-class>servlet.SearchCadre</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchCadre</servlet-name>
+        <url-pattern>/html/class_daily/SearchCadre</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchDor</servlet-name>
+        <servlet-class>servlet.SearchDor</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchDor</servlet-name>
+        <url-pattern>/html/class_daily/SearchDor</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchReward</servlet-name>
+        <servlet-class>servlet.SearchReward</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchReward</servlet-name>
+        <url-pattern>/html/class_daily/SearchReward</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchFund</servlet-name>
+        <servlet-class>servlet.SearchFund</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchFund</servlet-name>
+        <url-pattern>/html/class_daily/SearchFund</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchAtt</servlet-name>
+        <servlet-class>servlet.SearchATT</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchAtt</servlet-name>
+        <url-pattern>/html/class_daily/SearchATT</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchActivity</servlet-name>
+        <servlet-class>servlet.SearchActivity</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchActivity</servlet-name>
+        <url-pattern>/html/class_daily/SearchActivity</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchPlan</servlet-name>
+        <servlet-class>servlet.SearchPlan</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchPlan</servlet-name>
+        <url-pattern>/html/work/SearchPlan</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchSummary</servlet-name>
+        <servlet-class>servlet.SearchSummary</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchSummary</servlet-name>
+        <url-pattern>/html/work/SearchSummary</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchMeeting</servlet-name>
+        <servlet-class>servlet.SearchMeeting</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchMeeting</servlet-name>
+        <url-pattern>/html/work/SearchMeeting</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchTalking</servlet-name>
+        <servlet-class>servlet.SearchTalking</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchTalking</servlet-name>
+        <url-pattern>/html/work/SearchTalking</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchStuInfo</servlet-name>
+        <servlet-class>servlet.SearchStuInfo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchStuInfo</servlet-name>
+        <url-pattern>/html/stu_info/SearchStuInfo</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchAllStuInfo</servlet-name>
+        <servlet-class>servlet.SearchAllStuInfo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchAllStuInfo</servlet-name>
+        <url-pattern>/html/stumanage/SearchAllStuInfo</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchTeacher</servlet-name>
+        <servlet-class>servlet.SearchTeacher</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchTeacher</servlet-name>
+        <url-pattern>/html/teamanage/SearchTeacher</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchComment</servlet-name>
+        <servlet-class>servlet.SearchComment</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchComment</servlet-name>
+        <url-pattern>/html/stu_info/SearchComment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchVisit</servlet-name>
+        <servlet-class>servlet.SearchVisit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchVisit</servlet-name>
+        <url-pattern>/html/stu_info/SearchVisit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifySummary</servlet-name>
+        <servlet-class>servlet.ModifySummary</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifySummary</servlet-name>
+        <url-pattern>/html/work/ModifySummary</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyMeeting</servlet-name>
+        <servlet-class>servlet.ModifyMeeting</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyMeeting</servlet-name>
+        <url-pattern>/html/work/ModifyMeeting</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchGrade</servlet-name>
+        <servlet-class>servlet.SearchGrade</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchGrade</servlet-name>
+        <url-pattern>/html/grade/SearchGrade</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddGrade</servlet-name>
+        <servlet-class>servlet.AddGrade</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddGrade</servlet-name>
+        <url-pattern>/html/grade/AddGrade</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyGrade</servlet-name>
+        <servlet-class>servlet.ModifyGrade</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyGrade</servlet-name>
+        <url-pattern>/html/grade/ModifyGrade</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeletePlan</servlet-name>
+        <servlet-class>servlet.DeletePlan</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeletePlan</servlet-name>
+        <url-pattern>/html/work/DeletePlan</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteStudent</servlet-name>
+        <servlet-class>servlet.DeleteStudent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteStudent</servlet-name>
+        <url-pattern>/html/stumanage/DeleteStudent</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteTeacher</servlet-name>
+        <servlet-class>servlet.DeleteTeacher</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteTeacher</servlet-name>
+        <url-pattern>/html/teamanage/DeleteTeacher</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyTalking</servlet-name>
+        <servlet-class>servlet.ModifyTalking</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyTalking</servlet-name>
+        <url-pattern>/html/work/ModifyTalking</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AddTalking</servlet-name>
+        <servlet-class>servlet.AddTalking</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddTalking</servlet-name>
+        <url-pattern>/html/work/AddTalking</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyComment</servlet-name>
+        <servlet-class>servlet.ModifyComment</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyComment</servlet-name>
+        <url-pattern>/html/stu_info/ModifyComment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddComment</servlet-name>
+        <servlet-class>servlet.AddComment</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddComment</servlet-name>
+        <url-pattern>/html/stu_info/AddComment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyVisit</servlet-name>
+        <servlet-class>servlet.ModifyVisit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyVisit</servlet-name>
+        <url-pattern>/html/stu_info/ModifyVisit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddVisit</servlet-name>
+        <servlet-class>servlet.AddVisit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddVisit</servlet-name>
+        <url-pattern>/html/stu_info/AddVisit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyMes</servlet-name>
+        <servlet-class>servlet.ModifyMes</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyMes</servlet-name>
+        <url-pattern>/html/settings/ModifyMes</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ModifyPwd</servlet-name>
+        <servlet-class>servlet.ModifyPwd</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyPwd</servlet-name>
+        <url-pattern>/html/settings/ModifyPwd</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>InsertCmt</servlet-name>
+        <servlet-class>servlet.InsertCmt</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertCmt</servlet-name>
+        <url-pattern>/html/settings/InsertCmt</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>uploadImage</servlet-name>
+        <servlet-class>servlet.uploadImage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>uploadImage</servlet-name>
+        <url-pattern>/html/headPage/uploadImage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getImage</servlet-name>
+        <servlet-class>servlet.getImage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getImage</servlet-name>
+        <url-pattern>/html/headPage/getImage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getDuty</servlet-name>
+        <servlet-class>servlet.getDuty</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getDuty</servlet-name>
+        <url-pattern>/html/headPage/getDuty</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateDuty</servlet-name>
+        <servlet-class>servlet.updateDuty</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateDuty</servlet-name>
+        <url-pattern>/html/headPage/updateDuty</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyAdminMes</servlet-name>
+        <servlet-class>servlet.ModifyAdminMes</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyAdminMes</servlet-name>
+        <url-pattern>/html/settings/ModifyAdminMes</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyAdminPwd</servlet-name>
+        <servlet-class>servlet.ModifyAdminPwd</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModifyAdminPwd</servlet-name>
+        <url-pattern>/html/settings/ModifyAdminPwd</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InsertAdminCmt</servlet-name>
+        <servlet-class>servlet.InsertAdminCmt</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertAdminCmt</servlet-name>
+        <url-pattern>/html/settings/InsertAdminCmt</url-pattern>
+    </servlet-mapping>
+</web-app>
